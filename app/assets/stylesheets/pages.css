@@ -3910,7 +3910,7 @@ h3.c-head{
   }
   li.selector {
     font-size: 1.3em;
-    padding: 6px 0px 6px 22px;
+    padding: 6px 0 6px 22px;
     background: url('../images/list-show.png') no-repeat 0px 11px;
   }
   .selector.active {
