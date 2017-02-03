@@ -40,7 +40,7 @@ label{
 }
 /*-----start-header----*/
 .header {
-  background: url('banner.jpg') no-repeat 0px 0px;
+  background: url('banner.jpg') no-repeat 0 0;
   background-size:cover;
   -webkit-background-size:cover;
   -moz-background-size:cover;
@@ -173,7 +173,7 @@ i.cart {
 i.shipping {
   width: 60px;
   height: 60px;
-  background: url('img-sprite.png') no-repeat 0px -45px;
+  background: url('img-sprite.png') no-repeat 0 -45px;
   displaY: inline-block;
   margin-bottom:8px;
 }
@@ -273,7 +273,7 @@ i.shipping {
   margin-top:4px;
 }
 .features-section-grids {
-  background: url('middle-bg.jpg') no-repeat 0px 0px;
+  background: url('middle-bg.jpg') no-repeat 0 0;
   background-size:cover;
   min-height:330px;
   position: relative;
@@ -819,7 +819,7 @@ i.pinterest:hover {
   margin-top:4px;
 }
 .contact-section {
-  background: url('contact-bg.jpg') no-repeat 0px 0px;
+  background: url('contact-bg.jpg') no-repeat 0 0;
   background-size:cover;
   min-height:670px;
   padding-top:5em;
@@ -966,7 +966,7 @@ i.pinterest:hover {
 .footer-social-icons i {
   width:50px;
   height:50px;
-  background : url('../images/img-sprite.png') no-repeat 0px 0px;
+  background : url('../images/img-sprite.png') no-repeat 0 0;
   display:inline-block;
 }
 i.fb {
@@ -1116,7 +1116,7 @@ i.pt:hover {
 }
 /*--login--*/
 .login-left {
-  background: url(../images/bg-login.gif) no-repeat right bottom #ffffff;
+  background: url(bg-login.gif) no-repeat right bottom #ffffff;
   border: 1px solid #ececec;
   padding: 20px;
   min-height: 343px;
@@ -1124,7 +1124,7 @@ i.pt:hover {
   margin-right:2%;
 }
 .login-right {
-  background: url(../images/bg-login-2.gif) no-repeat right bottom #ffffff;
+  background: url(bg-login-2.gif) no-repeat right bottom #ffffff;
   border: 1px solid #ececec;
   padding: 20px;
   min-height: 343px;
@@ -1581,11 +1581,11 @@ h3.m_2 {
   top: 0;
   bottom: 0;
   padding:6px;
-  background:url(../images/p_plus.png) no-repeat 0px 10px;
+  background:url(p_plus.png) no-repeat 0 10px;
 }
 .metro:hover .selected::after,
 .metro.focus .selected::after{
-  background:url(../images/p_minus.png) no-repeat 0px 10px;
+  background:url(p_minus.png) no-repeat 0 10px;
 }
 /* DROP DOWN WRAPPER */
 .metro div{
@@ -2254,7 +2254,7 @@ span.rtng {
   display: block;
   width: 18px;
   height: 18px;
-  background: url(../images/star.png) 0 -3px;
+  background: url(star.png) 0 -3px;
   float:left;
   font-family: FontAwesome;
   font-style: normal;
@@ -2271,7 +2271,7 @@ span.rtng {
 }
 .sky-form .rating input:checked ~ label {
   color: #2da5da;
-  background: url(../images/star.png) 0 -20px;
+  background: url(star.png) 0 -20px;
   display: -webkit-box;
 }
 .span_2_of_3 {
@@ -2927,8 +2927,8 @@ h3.c-head{
     top: -197px;
     left: 95px;
     width: 77.2%;
-  }
-  .contact-section {
+  }m
+  .contact-secaion {
     min-height: 630px;
     padding-top: 4em;
   }
