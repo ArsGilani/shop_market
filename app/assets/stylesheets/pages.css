@@ -60,7 +60,7 @@ label{
 i.cart {
   width: 45px;
   height: 45px;
-  background: url('img-sprite.png') no-repeat -3px -3px #454B50;
+  background: image-url('img-sprite.png') no-repeat -3px -3px #454B50;
   border-radius: 30px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
@@ -966,7 +966,7 @@ i.pinterest:hover {
 .footer-social-icons i {
   width:50px;
   height:50px;
-  background : url('../images/img-sprite.png') no-repeat 0 0;
+  background : image-url('img-sprite.png') no-repeat 0 0;
   display:inline-block;
 }
 i.fb {
@@ -2728,7 +2728,7 @@ ul.selectors_wrapper {
 li.selector {
   list-style-type: none;
   padding: 10px 0px 10px 25px;
-  background: url('../images/list-show.png') no-repeat 0px 21px;
+  background: image-url('list-show.png') no-repeat 0px 21px;
   cursor: pointer;
   color: #566473;
   font-size: 1.7em;
@@ -2738,7 +2738,7 @@ li.selector {
 
 .selector.active {
   color: #eb5367;
-  background: url('../images/list-hover.png') no-repeat 0px 21px;
+  background: image-url('list-hover.png') no-repeat 0px 21px;
 }
 
 
