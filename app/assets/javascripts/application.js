@@ -14,5 +14,5 @@
 //= require jquery_ujs
 //= require classie
 //= require uisearch
-
+//= require cocoon
 //= require_tree .

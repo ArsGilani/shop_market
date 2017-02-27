@@ -1,0 +1,68 @@
+
+
+
+<!-- header-section-starts -->
+<div class="c-header" id="home">
+  <div class="top-header">
+    <div class="container">
+
+      <div class="logo">
+        <%= link_to(image_tag('logo.png')) %>
+      </div>
+
+      <div class="header-top-right">
+        <!-- start search-->
+        <div class="search-box">
+          <div id="sb-search" class="sb-search">
+            <form>
+              <input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
+              <input class="sb-search-submit" type="submit" value="">
+              <span class="sb-icon-search"> </span>
+            </form>
+          </div>
+        </div>
+
+        <!-- search-scripts -->
+       
+        <script>
+          new UISearch(document.getElementById('sb-search'));
+        </script>
+
+        <!-- //search-scripts -->
+
+        <a href="cart.html"><i class="cart"></i></a>
+      </div>
+      <div class="navigation">
+        <div>
+          <label class="mobile_menu" for="mobile_menu">
+            <span>Menu</span>
+          </label>
+          <input id="mobile_menu" type="checkbox">
+          <ul class="nav">
+            <li class="active"><a href="/">Home</a></li>
+
+             <% Category.where( parent_category: nil ).each do |category| %>
+              
+                <li class="dropdown1">
+                  <%= link_to category.name, admin_category_path(category) %>
+                  
+                    <ul class="dropdown2">
+                      <% category.child_categories.each do |c| %>
+                           <li><%= link_to c.name, admin_category_path(c) %></li>
+                      <% end %>
+                    </ul>
+                  
+                </li>
+              
+            <% end %>
+
+
+
+            <li><a href="contact.html">Contact US</a></li>
+            <div class="clearfix"></div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

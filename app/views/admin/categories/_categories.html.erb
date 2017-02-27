@@ -1,0 +1,10 @@
+<% categories.each do |category| %>
+      <li>
+        <%= link_to category.name, admin_category_path(category) %>
+        <% if category.child_categories.any? %>
+            <ul>
+            <%= render 'categories', categories: category.child_categories %>
+            </ul>
+        <% end %>
+      </li>
+  <% end %>

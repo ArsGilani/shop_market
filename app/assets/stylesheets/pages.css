@@ -40,13 +40,13 @@ label{
 }
 /*-----start-header----*/
 .header {
-  background: url('banner.jpg') no-repeat 0 0;
+  /*background: url('banner.jpg') no-repeat 0 0;
   background-size:cover;
   -webkit-background-size:cover;
   -moz-background-size:cover;
   -o-background-size:cover;
   -ms-background-size:cover;
-  min-height:820px;
+  min-height:820px;*/
 }
 .top-header{
   padding:2em 0;
@@ -176,6 +176,15 @@ i.shipping {
   background: url('img-sprite.png') no-repeat 0 -45px;
   displaY: inline-block;
   margin-bottom:8px;
+}
+.banner {
+  background: url('banner.jpg') no-repeat 0 0;
+  background-size:cover;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  -ms-background-size:cover;
+  min-height:820px;
 }
 .banner-info h3 {
   color: #ccd1d9;
@@ -2900,7 +2909,7 @@ h3.c-head{
     padding: 1.7em 0;
   }
   .signing {
-    margin: 2.2em 0;
+    margin: 0;
   }
   .banner-info p {
     margin: 1.4em 0 3em 0;

@@ -1,0 +1,14 @@
+<div class='nested-fields row'>
+  <div class="field col-sm-7">
+    <%= f.label :title %>
+    <%= f.text_field :title, class: 'form-control'  %>
+  </div>
+  <div class="field col-sm-3">
+    <%= f.label :image %>
+    <%= f.file_field :image %>
+  </div>
+  <div class="col-sm-2">
+    <%= link_to_remove_association "Удалить поле", f, class: 'btn btn-danger' %>
+  </div>
+  
+</div>
