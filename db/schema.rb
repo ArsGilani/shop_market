@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(version: 20170227120726) do
     t.text     "details"
     t.integer  "category_id"
     t.decimal  "price"
+    t.string   "color"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.index ["category_id"], name: "index_products_on_category_id"

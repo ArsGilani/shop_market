@@ -144,9 +144,11 @@
           <% Category.where(parent_category_id: nil).each do |category| %>
           <select class="dropdown" tabindex="10" data-settings='{"wrapperClass":"metro"}'>
             <% counter = 0 %>
+            <option value="<%= counter %>"><%= category.name %></option>
             <% category.child_categories.each do |child| %>
-            <option value="<%= counter %>"><%= child.name %></option>
-            <% counter += 1 %>
+
+              <option value="<%= counter %>"><%= child.name %></option>
+              <% counter += 1 %>
             <% end %>
           </select>
           <% end %>
