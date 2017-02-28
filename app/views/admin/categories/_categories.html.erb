@@ -1,10 +1,10 @@
-<% categories.each do |category| %>
-      <li>
-        <%= link_to category.name, admin_category_path(category) %>
-        <% if category.child_categories.any? %>
-            <ul>
-            <%= render 'categories', categories: category.child_categories %>
-            </ul>
-        <% end %>
-      </li>
+<ol>
+  <% categories.each do |category| %>
+    <li>
+       <%= link_to category.name, admin_category_path(category) %> 
+      <% if category.child_categories.any? %>
+          <%= render 'admin/categories/categories', categories: category.child_categories %>
+      <% end %>
+    </li>
   <% end %>
+</ol>

@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   
   resources :categories, only: [:index, :show]
+  resources :products, only: [:index, :show]
 
 
   namespace :admin do
@@ -9,8 +10,7 @@ Rails.application.routes.draw do
       resources :products
     end
   end
-  get 'products/index'
-  get 'products/show'
+  
   root 'pages#index'
   get 'pages/index'
 

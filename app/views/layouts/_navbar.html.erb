@@ -44,11 +44,11 @@
              <% Category.where( parent_category: nil ).each do |category| %>
               
                 <li class="dropdown1">
-                  <%= link_to category.name, admin_category_path(category) %>
+                  <%= link_to category.name, category_path(category) %>
                   
                     <ul class="dropdown2">
                       <% category.child_categories.each do |c| %>
-                           <li><%= link_to c.name, admin_category_path(c) %></li>
+                           <li><%= link_to c.name, category_path(c) %></li>
                       <% end %>
                     </ul>
                   

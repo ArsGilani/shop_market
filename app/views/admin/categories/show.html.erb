@@ -26,21 +26,30 @@
 
 			<%= link_to 'Edit', edit_admin_category_path(@admin_category) %> |
 			<%= link_to 'Back', admin_categories_path %>
-			<h3>Products:</h3>
 			
-				<% @admin_category.products.each do |pr| %>
-					<%= pr.title %> <br>
-					<%= link_to pr.title, admin_category_product_path(pr.id.to_i) %> <br>
-				<% end %>
 			
 		</div>
 
 		
 
 		<div class="col-sm-6">
-			<h5><%= link_to 'Добавить продукт в эту категорию', new_admin_category_product_path(@admin_category) %></h5>
+			<h5>
+				<%= link_to "Добавить товар в #{@admin_category.name}", new_admin_category_product_path(@admin_category), class: 'btn btn-success' %>
+			</h5>
 
-
+			<h3 style="margin: 20px 0 20px 0;">Товары в данной категории::</h3>
+			<hr>
+			<ul>
+				<% @admin_category.products.each do |pr| %>
+				<li>
+					<%= link_to pr.title + '555', admin_category_product_path(@admin_category, pr) %> 
+				</li>
+				<% end %>
+			</ul>
+			
+				
+				
+			
 
 
 		</div>

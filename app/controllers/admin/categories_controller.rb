@@ -5,7 +5,7 @@ class Admin::CategoriesController < AdminController
   # GET /admin/categories
   # GET /admin/categories.json
   def index
-    @admin_categories = Category.all
+    @admin_categories = Category.order('parent_category_id ASC')
   end
 
   # GET /admin/categories/1
@@ -44,7 +44,7 @@ class Admin::CategoriesController < AdminController
   def update
     respond_to do |format|
       if @admin_category.update(admin_category_params)
-        format.html { redirect_to @admin_category, notice: 'Category was successfully updated.' }
+        format.html { redirect_to [:admin, @admin_category], notice: 'Category was successfully updated.' }
         format.json { render :show, status: :ok, location: @admin_category }
       else
         format.html { render :edit }
